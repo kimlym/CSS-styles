@@ -1,0 +1,281 @@
+/*font*/
+@@font-face {
+  font-family: myFont;
+  src: url(../Adine Kirnberg.ttf);
+}
+
+
+/*main css*/
+body h3,p{
+  font-family: myFont,cursive;
+}
+
+.card img{
+  height: 62%;
+  width: 70%;
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card{
+  opacity:0.55;
+  background-color: white;
+  height:450px;
+  width:90%;
+  margin:5%;
+  align-items: center;
+  animation-duration: 1.5s;
+}
+
+div.card>div{
+  position: relative;
+  top:4%;
+  text-align: center;
+}
+
+.name{
+  color:#00C78C;
+}
+
+div.card div:last-child{
+  position: relative;
+  top: -1%;
+}
+
+
+#upleft{
+  animation-name: upleftIn;
+}
+#up{
+  animation-name: upIn;
+}
+#upright{
+  animation-name: uprightIn;
+}
+#left{
+  animation-name: leftIn;
+}
+#buttom{
+  animation-name: buttomIn;
+}
+#right{
+  animation-name: rightIn;
+}
+
+
+
+.card:hover{
+  opacity:1;
+}
+
+.portrait{
+  width: 100%;
+  margin-top:6%;
+  border-radius: 50%;
+}
+
+.portrait:hover{
+  transform:rotate(-15deg);
+  transition-duration: 2s;
+}
+
+.container-fluid{
+  padding: 5px;
+  background-color: #48d1cc;
+}
+
+.navbar.navbar-default{
+  margin:0;
+  text-align: center;
+}
+
+.navbar.navbar-default a,
+.navbar.navbar-default ul li a{
+  color:white;
+}
+
+.navbar-header{
+  color:white;
+}
+.navbar-header img{
+  float:left;
+  margin-right:5px;
+  margin-top: 15px;
+}
+
+.navbar.navbar-default ul li a:hover{
+  color:pink;
+  background-color: white;
+  border-radius: 10%;
+}
+
+#ctn2{
+  background-color: black;
+  color:white;
+  height:auto;
+}
+
+#ctn2 div, h3{
+  display: inline-block;
+}
+
+#ctn2 img{
+  margin-top: 55%;
+}
+
+.navbar.navbar-default h3{
+  display: inline-block;
+}
+
+
+.img-change img:last-child{
+  display: none;
+}
+
+.img-change:hover img:first-child{
+  display:none;
+}
+
+.img-change:hover img:last-child{
+  display:block;
+}
+
+.navbar-header a img:hover{
+  background: url(../img/icons/up_hover);
+}
+
+.description{
+  margin: 5px 10%;
+}
+
+.description ul a{
+  text-decoration: none;
+}
+
+#Blocks ul{
+  display: inline-block;
+}
+
+#holder{
+  display: inline-block;
+  border:solid;
+  float: right;
+  height:138px;
+  width:20%;
+}
+
+#Org{
+  position: relative;
+  width: 100%;
+  height:auto;
+}
+
+#Org a{
+  list-style-image: url(../img/icons/heart.png);
+  opacity: 0.5;
+  color:blue;
+}
+
+#Org a:hover{
+  opacity: 1;
+  color:red;
+}
+
+#Org img{
+  position: absolute;
+  right:5%;
+  top:0;
+  display:none;
+  width:auto;
+  height:100%;
+}
+
+
+
+#Org a:hover+img{
+  display:block;
+}
+
+#Fun{
+  margin-left: -40px;
+}
+
+
+#Fun ul li{
+  list-style-image: url(../img/icons/star.png);
+  opacity: 0.5;
+}
+
+#Fun ul:hover{
+  background-color: white;
+}
+
+#Fun ul li:hover{
+  opacity: 1;
+}
+
+
+/*animation*/
+@keyframes leftIn {
+  0% {
+    transform: translateX(-80px);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes upleftIn {
+  0% {
+    transform:translate(-80px,-80px);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes upIn {
+  0% {
+    transform: translateY(-80px);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes uprightIn {
+  0% {
+    transform:translate(80px,-80px);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes rightIn {
+  0% {
+    transform: translateX(80px);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes buttomIn {
+  0% {
+    transform: translateY(80px);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
